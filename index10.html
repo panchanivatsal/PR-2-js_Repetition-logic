@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body
+    style="color: white;font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 500; background-color: black;">
+    <!-- Write a JavaScript program to create basic calculator using switch case. -->
+    <script type="text/javascript">
+
+       
+        var a = Number(prompt("Enter the first number: "));
+        var b = Number(prompt("Enter the second number: "));
+        var choice =prompt("Select an operation (+, -, *, /): ");
+
+        var result;
+
+        
+        switch (choice) {
+            case "+":
+                result = a + b;
+                document.write("A + B = "+ result);
+                break;
+            case "-":
+                result = a - b;
+                document.write("A - B = "+ result);
+                break;
+            case "*":
+                result = a * b;
+                document.write("A * B = "+ result);
+
+                break;
+            case "/":
+                result = a / b;
+                document.write("A / B = "+ result);
+                break;
+            default:
+                document.write("Invalid choice");
+
+        }
+    </script>
+</body>
+
+</html>

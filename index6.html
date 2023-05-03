@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body
+  style="color: white;font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 500; background-color: black;">
+  <!-- Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology,
+         Mathematics and Computer. Calculate percentage and grade according to following -->
+  <script type="text/javascript">
+    var Physics = parseInt(prompt("Enter the Physics mark"));
+    var Chemistry = parseInt(prompt("Enter the Chemistry mark"));
+    var Biology = parseInt(prompt("Enter the Biology mark"));
+    var Mathematics = parseInt(prompt("Enter the Mathematics mark"));
+    var Computer = parseInt(prompt("Enter the Computer mark"));
+    var ans = Physics + Chemistry + Biology + Mathematics + Computer;
+    console.log(ans);
+    var percentage = (ans * 100 / 500);
+    document.write(percentage);
+    if (percentage >= 90) {
+      document.write(" Grade = A");
+    } else if (percentage >= 80) {
+      document.write(" Grade = B");
+    } else if (percentage >= 70) {
+      document.write(" Grade = C");
+    } else if (percentage >= 60) {
+      document.write(" Grade = E");
+    } else {
+      document.write(" Your are Fail......!");
+    }
+  </script>
+</body>
+
+</html>
